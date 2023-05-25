@@ -1,18 +1,18 @@
 {
     "routes": [
-      {
-        "route": "/manuals*",
-        "allowedRoles": ["authenticated"]
-      },
-      {
-        "route": "/manuals/new.html",
-        "allowedRoles": ["superhero"]
-      }
+        {
+            "route": "/manuals/new.html",
+            "allowedRoles": ["superhero"]
+        },
+        {
+            "route": "/manuals*",
+            "allowedRoles": ["authenticated"]
+        }
     ],
     "responseOverrides": {
-      "401": {
-        "statusCode": 302,
-        "redirect": "/.auth/login/aad"
-      }
+        "401": {
+            "statusCode": 302,
+            "redirect": "/.auth/login/aad"
+        }
     }
-  }
+}
