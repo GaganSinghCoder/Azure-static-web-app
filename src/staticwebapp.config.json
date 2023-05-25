@@ -1,8 +1,8 @@
 {
     "routes": [
       {
-        "route": "/*",
-        "allowedRoles": ["authenticated"]
+        "route": "/myinner/insidebody.html",
+        "allowedRoles": ["superhero"]
       }
     ],
     "responseOverrides": {
