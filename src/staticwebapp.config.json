@@ -1,7 +1,11 @@
 {
     "routes": [
       {
-        "route": "/myinner/insidebody.html",
+        "route": "/manuals*",
+        "allowedRoles": ["authenticated"]
+      },
+      {
+        "route": "/manuals/new.html",
         "allowedRoles": ["superhero"]
       }
     ],
